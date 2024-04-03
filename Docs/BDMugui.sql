@@ -8,14 +8,6 @@ CREATE TABLE Ingrediente (
     Ing_nombre VARCHAR(255)
 );
 
-CREATE TABLE Precio_Rec (
-    Rec_Id INT,
-    Prec_Rec_Fecha DATE,
-    Precio_Rec REAL,
-    PRIMARY KEY (Rec_Id, Prec_Rec_Fecha),
-    FOREIGN KEY (Rec_Id) REFERENCES Receta(Rec_Id)
-);
-
 CREATE TABLE Precio_Ing (
     Ing_Id INT,
     Prec_Ing_Fecha DATE,

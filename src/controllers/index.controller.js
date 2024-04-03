@@ -16,5 +16,7 @@ controller.PruebaConsulta = async (req, res) => {
     }
 };
 
+
+
 module.exports = controller;
 
