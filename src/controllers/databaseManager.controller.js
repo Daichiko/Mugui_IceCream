@@ -26,4 +26,16 @@ dbManager.consulta = async function(query) {
     return res.rows;
 };
 
+dbManager.consultaByData = async function(query, data) {
+    let res;
+    try {
+        res = await pool.query(query, data);
+    } catch (err) {
+        console.log(err);
+        throw err;
+    } 
+
+    return res.rows;
+}
+
 module.exports = dbManager;
